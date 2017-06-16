@@ -8,7 +8,6 @@ $(document).ready(function(){
     audio = new Audio(data['url']);
 
     audio.ondurationchange = function(){
-      console.log( audio.duration );
       audio.currentTime = Math.floor(Math.random() * audio.duration) + 1;
       $('#btn-play').attr('disabled', false);
       $('.loading').hide();
