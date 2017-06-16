@@ -8,13 +8,19 @@ img.logo {
   width: 200px;
 }
 
+@media screen and (min-width: 1366px) {
+
+  .container {
+    border-radius: 25px;
+    width: auto;
+    max-width: 680px;
+    margin-top: 40px;
+  }
+
+}
 .container {
   border: 1px solid #fff;
   background-color: #ecf0f1;
-  border-radius: 25px;
-  width: auto;
-  max-width: 680px;
-  margin-top: 40px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
