@@ -1,17 +1,24 @@
 .row.text-center
   .col-md-6
     %img.logo{:src => image_url('logo.png')}
-  .col-md-6{:style => 'padding-top: 70px;'}
-    %audio#audio{:preload => "auto"}
+  .col-md-6{:style => 'padding-top: 50px;'}
+
+    %i.episode-title Carregando episódio aleátorio...
     .btn-group
       %button.btn.btn-success.btn-lg.btn-xlg{:id => 'btn-play'}
-        %span#play.glyphicon.glyphicon-play.aligned{:title => "Iniciar"}
+        %span#play.fa.fa-play.aligned{:title => "Iniciar"}
       %button.btn.btn-primary.btn-lg.btn-xlg{:id => 'btn-pause'}
-        %span#play.glyphicon.glyphicon-pause.aligned{:title => "Pausar"}
+        %span#play.fa.fa-pause.aligned{:title => "Pausar"}
       %button.btn.btn-warning.btn-lg.btn-xlg{:id => 'btn-change'}
-        %span#play.glyphicon.glyphicon-refresh.aligned{:title => "Mudar conversa"}
+        %span#play.fa.fa-random.aligned{:title => "Mudar episódio"}
+      %button.btn.btn-warning.btn-lg.btn-xlg{:onClick => 'window.location.reload()'}
+        %span#play.fa.fa-refresh.aligned{:title => "Mudar podcast"}
       %button.btn.btn-danger.btn-lg.btn-xlg{:id => 'btn-stop'}
-        %span#stop.glyphicon.glyphicon-stop.aligned{:title => "Parar"}
+        %span#stop.fa.fa-stop.aligned{:title => "Parar"}
+    
+    %br
+    %br
+    %i.fa.fa-spinner.fa-spin.fa-3x.fa-fw.loading
 
 .row.text-center
   .col-sm-12
@@ -30,5 +37,5 @@
     %br
     %a.pull-left{:href => "bitcoin:1QxRaAR6AevWc54wFiJG11aUtYGEhXy2d", :title => 'Contribua com o LoremOuvo'}
       %small.text-muted 1QxRaAR6AevWc54wFiJG11aUtYGEhXy2d
-    %a.pull-right{:href => ""}
+    %a.pull-right{:href => "https://github.com/lenilsonjr/LoremOuvo", :target => '_blank'}
       %small.text-muted ver no GitHub

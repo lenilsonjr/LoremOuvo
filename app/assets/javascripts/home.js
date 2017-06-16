@@ -1,10 +1,20 @@
 $(document).ready(function(){
 
+  $('#btn-play').attr('disabled', true);
   $('#btn-stop').attr('disabled', true);
 
-  var audio = new Audio('http://naosalvo.com.br/podcast/NaoOuvo_051_Especial_Aniversario.mp3');
+  $.get( "/feed", function( data ) {
+    $(".episode-title").text(data['title']);
+    audio = new Audio(data['url']);
 
-  audio.currentTime = Math.floor(Math.random() * 14400) + 1;
+    audio.ondurationchange = function(){
+      console.log( audio.duration );
+      audio.currentTime = Math.floor(Math.random() * audio.duration) + 1;
+      $('#btn-play').attr('disabled', false);
+      $('.loading').hide();
+    };
+
+  });
 
   $('#btn-play').click(function(){
 
