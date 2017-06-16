@@ -10,6 +10,7 @@ Como um bom Não Ouvinte, uso o Não Ouvo para me concentrar enquanto trabalho, 
 - Melhorar feedback visual para o usuário sobre o status de carregamento do episódio
 - Melhorar performance
 - Fazer o player tocar episódios infinitamente, sem que o usuário precise recarregar a página
+- Configurar ServiceWorker e Manifest.js
 
 ## Como contribuir?
 Basta clonar este repositório e enviar uma pull request com sua funcionalidade.
