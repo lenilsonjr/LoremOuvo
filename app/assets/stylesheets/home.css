@@ -1,0 +1,32 @@
+body {
+  background: #fddf40;
+  margin: 0;
+  height: 100%;
+}
+
+img.logo {
+  width: 200px;
+}
+
+.container {
+  border: 1px solid #fff;
+  background-color: #ecf0f1;
+  border-radius: 25px;
+  width: auto;
+  max-width: 680px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.btn-xlg {
+  padding: 20px 20px 20px 20px;
+}
+
+.btn-success {
+  background: #27ae60;
+}
+
+.btn-danger {
+  background: #e74c3c;
+}

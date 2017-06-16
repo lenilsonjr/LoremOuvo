@@ -1,0 +1,34 @@
+.row.text-center
+  .col-md-6
+    %img.logo{:src => image_url('logo.png')}
+  .col-md-6{:style => 'padding-top: 70px;'}
+    %audio#audio{:preload => "auto"}
+    .btn-group
+      %button.btn.btn-success.btn-lg.btn-xlg{:id => 'btn-play'}
+        %span#play.glyphicon.glyphicon-play.aligned{:title => "Iniciar"}
+      %button.btn.btn-primary.btn-lg.btn-xlg{:id => 'btn-pause'}
+        %span#play.glyphicon.glyphicon-pause.aligned{:title => "Pausar"}
+      %button.btn.btn-warning.btn-lg.btn-xlg{:id => 'btn-change'}
+        %span#play.glyphicon.glyphicon-refresh.aligned{:title => "Mudar conversa"}
+      %button.btn.btn-danger.btn-lg.btn-xlg{:id => 'btn-stop'}
+        %span#stop.glyphicon.glyphicon-stop.aligned{:title => "Parar"}
+
+.row.text-center
+  .col-sm-12
+    %hr
+  .col-sm-6
+    %a{:href => "feed:feeds.feedburner.com/naoouvo"}
+      %h3
+        = fa_icon "rss-square"
+        Assine o feed
+  .col-sm-6
+    %a{:href => "https://twitter.com/NaoOuvo", :target => "_blank"}
+      %h3
+        = fa_icon "twitter-square"
+        Siga no Twitter
+  .col-sm-12
+    %br
+    %a.pull-left{:href => "bitcoin:1QxRaAR6AevWc54wFiJG11aUtYGEhXy2d", :title => 'Contribua com o LoremOuvo'}
+      %small.text-muted 1QxRaAR6AevWc54wFiJG11aUtYGEhXy2d
+    %a.pull-right{:href => ""}
+      %small.text-muted ver no GitHub
